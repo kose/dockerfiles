@@ -4,7 +4,7 @@
 
 Working [MediaPipe](https://google.github.io/mediapipe/) on C++, Python.
 
-<img src="images/structure-chart.png" width=600>
+<img src="images/structure-chart.png" width=800>
 
 # Environment
 
@@ -33,7 +33,7 @@ cd mjpeg_stream_webcam
 python mjpegsw.py --port 8001
 ```
 
-SSH login to docker machine, and port foward.
+SSH login to docker machine, with port foward.
 
 ```
 ssh -R 8001:localhost:8001 localhost
@@ -42,7 +42,7 @@ ssh -R 8001:localhost:8001 localhost
 # start vnc server
 
 ```
-call from .bash_profile
+exec from .bash_profile
 
 bin/start-vncserver.sh
 ```
