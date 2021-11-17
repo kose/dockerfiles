@@ -115,7 +115,4 @@ see doc : https://google.github.io/mediapipe/getting_started/python.html
 
 # Reference
 
-- Qiita in Japanese.
-
-
-
+- Qiita in Japanese. (Under construction)
