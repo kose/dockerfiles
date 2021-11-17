@@ -26,11 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-###
-# (cd bin ; rm -f bazel ; ln -s bazel-4.2.1-linux-`arch` bazel)
-
-# rm -rf .cache ; ln -s .cache-`arch` .cache
-
 ## start vncserver
 bin/start-vncserver.sh
 
