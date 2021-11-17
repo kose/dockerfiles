@@ -1,0 +1,10 @@
+#####
+
+setuptools
+wheel
+future
+# RUN pip3 install six==1.14.0
+# RUN pip3 install tensorflow==1.14.0
+tf_slim
+
+## end
