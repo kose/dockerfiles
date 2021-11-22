@@ -117,4 +117,4 @@ sudo pip install -r mediapipe/requirements.txt
 # Reference
 
 - https://google.github.io/mediapipe/getting_started/python.html
-- Qiita in Japanese. (Under construction)
+- [Qiita in Japanese](https://qiita.com/kose3/items/38b9b7ba7a2747c60eba).
