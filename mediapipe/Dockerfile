@@ -78,18 +78,15 @@ RUN apt update \
 RUN apt update \
     && apt install -y --no-install-recommends \
     build-essential \
-    ca-certificates \
-    python3-dev \
-    python3-opencv \
-    python3-pip \
-    libopencv-dev \
-    libopencv-contrib-dev \
-    software-properties-common \
     cmake \
     cmake-curses-gui \
     openjdk-8-jdk \
-    protobuf-compiler \
-    libprotobuf-dev
+    python3-dev \
+    python3-pip \
+    python3-opencv \
+    libopencv-dev \
+    libopencv-contrib-dev \
+    && apt install -y protobuf-compiler
 
 RUN rm -f /usr/bin/python ; ln -s /usr/bin/python3 /usr/bin/python
 

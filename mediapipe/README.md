@@ -1,4 +1,4 @@
-# MediaPipe(C++, Python) on Ubuntu20.04, VNC, aarch64 (M1 MacBook)
+# MediaPipe(C++, Python) on Ubuntu20.04, VNC, aarch64 (M1 MacBook, Docker)
 
 # Introduction
 
@@ -49,7 +49,7 @@ bin/start-vncserver.sh
 
 # VNC Viewer
 
-on macOS' finder
+on macOS Finder
 
 ```
 passwd: vncpasswd
@@ -59,23 +59,20 @@ passwd: vncpasswd
 
 # MediaPipe (on Docker Ubuntu)
 
-## install bazel
+## Install Bazel
 
 ```
 wget https://github.com/bazelbuild/bazel/releases/download/4.2.1/bazel-4.2.1-linux-arm64
-cp bazel-4.2.1-linux-arm64 /usr/local/bin/bazel
+sudo chmod +x bazel-4.2.1-linux-arm64
+sudo cp bazel-4.2.1-linux-arm64 /usr/local/bin/bazel
 ```
 
-## build python lib
+## Build python lib
 
 ```
-sudo pip install -r ~/bin/requirements.txt
-
 git clone https://github.com/google/mediapipe.git
 cd mediapipe
 git checkout v0.8.8
-
-sudo pip install -r requirements.txt
 
 sudo chmod 777 /usr/local/lib/python3.8/dist-packages
 ```
@@ -106,13 +103,18 @@ index 8445855..afc3700 100644
          "-l:libopencv_core.so",
 ```
 
+Failed bdist_wheel, but SUCCESS!! install --link-opnecv
+
 ```
-python3 setup.py gen_protos
-python3 setup.py install --link-opencv
+python setup.py gen_protos
+python setup.py install --link-opencv
 ```
 
-see doc : https://google.github.io/mediapipe/getting_started/python.html
+```
+sudo pip install -r mediapipe/requirements.txt
+```
 
 # Reference
 
+- https://google.github.io/mediapipe/getting_started/python.html
 - Qiita in Japanese. (Under construction)
