@@ -1,3 +1,0 @@
-[submodule "openvino/build-OpenVINO"]
-	path = openvino/build-OpenVINO
-	url = https://github.com/kose/build-OpenVINO.git
