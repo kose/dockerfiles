@@ -2,7 +2,7 @@
 
 # Introduction
 
-Working [OpenVINO](https://github.com/openvinotoolkit) on arm_plugin
+Working [OpenVINO](https://github.com/openvinotoolkit/openvino) on arm_plugin
 
 # Environment
 
