@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# ARCH=x86_64
 ARCH=aarch64
 
 OS=ubuntu21.10
@@ -32,11 +31,7 @@ if test "$IMAGE_ID" = ""; then
     /bin/echo -n "password: "
     read PASSWORD
 
-    if test "$ARCH" = "x86_64"; then
-	do_command "docker build -t $IMAGE --build-arg USER=$USER --build-arg PASSWORD=$PASSWORD ."
-    else
-	do_command "docker buildx build --platform linux/arm64 -t $IMAGE --build-arg USER=$USER --build-arg PASSWORD=$PASSWORD ."
-    fi
+    do_command "docker buildx build --platform linux/arm64 -t $IMAGE --build-arg USER=$USER --build-arg PASSWORD=$PASSWORD ."
 fi
 
 ##

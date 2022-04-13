@@ -66,7 +66,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gstreamer1.0-plugins-base \
     libusb-1.0-0-dev \
     libopenblas-dev \
-    libpng-dev
+    libpng-dev \
+    scons
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 
