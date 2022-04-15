@@ -1,14 +1,16 @@
 # PyPi openvino-dev
 
-ARM環境にはpipのopenvino-devパッケージが作られていないので、x86_64環境でOpenVINOモデルのダウンロードを行います。
+No openvino-dev pip pckage in ARM envieronment, But in this x86_64 envieronment is abailable download.
 
-## make dockerfile
+ARM環境にはpipのopenvino-devパッケージがありませんが、x86_64環境ではモデルのダウンロードが可能です。
+
+## make dockerfile, and run
 
 ```
 ./run.sh
 ```
 
-## モデルダウンロード
+## Download models
 
 
 ```
@@ -16,7 +18,7 @@ ARM環境にはpipのopenvino-devパッケージが作られていないので�
 ```
 
 
-例えば
+for exsample...
 
 ```
 ./download.sh yolo-v3-tf
