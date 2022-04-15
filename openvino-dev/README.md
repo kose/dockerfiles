@@ -1,6 +1,6 @@
 # PyPi openvino-dev
 
-ARM環境ではpipのopenvino-devパッケージが作られていなので、x86_64環境でOpenVINOのモデルダウンロードを行います。
+ARM環境にはpipのopenvino-devパッケージが作られていないので、x86_64環境でOpenVINOモデルのダウンロードを行います。
 
 ## make dockerfile
 
