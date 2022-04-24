@@ -1,7 +1,6 @@
 ## -*- mode:dockerfile -*-
 
-FROM ubuntu:20.04
-# FROM ubuntu:21.10
+FROM ubuntu:21.10
 
 # RUN sed -i.bak -e "s%http://[^ ]\+%http://jp.archive.ubuntu.com/ubuntu/%g" /etc/apt/sources.list
 

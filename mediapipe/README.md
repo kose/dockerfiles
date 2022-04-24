@@ -1,4 +1,4 @@
-# MediaPipe(C++, Python) on Ubuntu20.04, VNC, aarch64 (M1 MacBook, Docker)
+# MediaPipe(C++, Python) on Ubuntu21.10, VNC, aarch64 (M1 MacBook, Docker)
 
 # Introduction
 

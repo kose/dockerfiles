@@ -1,4 +1,4 @@
-#  environment: Ubuntu20.04, mediapipe, VNC
+#  environment: Ubuntu21.10, mediapipe, VNC
 #
 # docker build -t mediapipe \
 #    --build-arg USER=usename \
@@ -9,7 +9,7 @@
 # docker run -d -p 5901:5901 -p 2022:22 \
 #       --name mediapipe mediapipe
 #
-FROM ubuntu:20.04
+FROM ubuntu:21.10
 
 LABEL maintainer "KOSEKI Yoshinori <koseki.y@gmail.com>"
 

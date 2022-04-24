@@ -2,7 +2,7 @@
 
 ARCH=aarch64
 
-OS=ubuntu20.04
+OS=ubuntu21.10
 IMAGE=$ARCH:$OS
 HOSTNAME=docker
 USER=your-user-name
