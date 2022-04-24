@@ -2,7 +2,7 @@
 
 NAME=openvino-dev
 ARCH=x86_64
-OS=ubuntu21.10
+OS=ubuntu20.04
 IMAGE="$NAME":"$OS"_"$ARCH"
 HOSTNAME=docker
 USER=your-user-name
