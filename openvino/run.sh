@@ -1,9 +1,10 @@
 #!/bin/sh
 
+NAME=openvino
 ARCH=aarch64
 
-OS=ubuntu21.10
-IMAGE=$ARCH:$OS
+OS=ubuntu22.04
+IMAGE="$NAME":"$OS"_"$ARCH"
 HOSTNAME=docker
 USER=your-user-name
 

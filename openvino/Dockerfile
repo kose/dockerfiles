@@ -1,6 +1,6 @@
 ## -*- mode:dockerfile -*-
 
-FROM ubuntu:21.10
+FROM ubuntu:22.04
 
 # RUN sed -i.bak -e "s%http://[^ ]\+%http://jp.archive.ubuntu.com/ubuntu/%g" /etc/apt/sources.list
 
@@ -68,7 +68,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpng-dev \
     scons
 
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
 
 # ################
 # # gcc 9
