@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    image: gpt-proxy:latest
+    container_name: gpt-proxy
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ${HOME}/docker/container/dockerfiles/gpt-proxy/cgi-bin:/usr/share/nginx/html/cgi-bin
+      
+    # NGINX起動後に実行されるコマンドを指定
+    command: ["sh", "-c", "service fcgiwrap start && nginx -g 'daemon off;'"]

@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab
+    hostname: ${HOSTNAME}
+    restart: always
+    ports:
+      - "8443:443"
+      - "8100:80"
+      - "2022:22"
+    volumes:
+      - ${HOME}/docker/backup:/var/opt/backup
+      - config:/etc/gitlab
+      - data:/var/opt/gitlab
+
+volumes:
+  config:
+  data:
+
+#       - ${HOME}/docker/gitlab/config:/etc/gitlab
+#       - ${HOME}/docker/gitlab/logs:/var/log/gitlab
+#       - ${HOME}/docker/gitlab/data:/var/opt/gitlab
+      
