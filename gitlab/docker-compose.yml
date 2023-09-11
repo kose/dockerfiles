@@ -11,7 +11,7 @@ services:
       - "8100:80"
       - "2022:22"
     volumes:
-      - ${HOME}/docker/backup:/var/opt/backup
+      - ${HOME}/docker/backups:/var/opt/gitlab/backups
       - config:/etc/gitlab
       - data:/var/opt/gitlab
 
