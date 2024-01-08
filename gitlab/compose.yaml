@@ -1,5 +1,4 @@
-version: '3'
-
+####
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
