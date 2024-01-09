@@ -3,13 +3,13 @@
 ## 起動
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 ## 停止
 
 ```
-docker-compose down
+docker compose down
 ```
 
 ## ToDo （解決したいこと）
