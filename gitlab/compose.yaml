@@ -1,24 +1,26 @@
-####
+###
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
-    hostname: ${HOSTNAME}
     restart: always
+    hostname: 'localhost'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://localhost'
+        gitlab_rails['time_zone'] = 'Asia/Tokyo'    
     ports:
       - "8443:443"
       - "8100:80"
       - "2022:22"
     volumes:
       - ${HOME}/docker/backups:/var/opt/gitlab/backups
-      - config:/etc/gitlab
-      - data:/var/opt/gitlab
+      - config2:/etc/gitlab
+      - data2:/var/opt/gitlab
 
 volumes:
-  config:
-  data:
+  config2:
+  data2:
 
-#       - ${HOME}/docker/gitlab/config:/etc/gitlab
-#       - ${HOME}/docker/gitlab/logs:/var/log/gitlab
-#       - ${HOME}/docker/gitlab/data:/var/opt/gitlab
-      
+### end
+
