@@ -31,3 +31,7 @@ Ubuntuでもlocalhostでない場合は設定必要
   "insecure-registries" : ["nuc.local:5100"]
 }
 ```
+## レジストリサーバの閲覧
+
+- docker-registry-frontend
+
