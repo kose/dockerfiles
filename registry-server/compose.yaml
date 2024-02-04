@@ -1,0 +1,12 @@
+services:
+  registry:
+    image: registry:latest
+    container_name: registry-server
+    ports:
+      - "5100:5000"
+    volumes:
+      - images:/var/lib/registry
+
+volumes:
+  images:
+      
