@@ -4,10 +4,10 @@ services:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
     restart: always
-    hostname: 'localhost'
+    hostname: 'repository'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://localhost'
+        # external_url 'http://localhost'
         gitlab_rails['time_zone'] = 'Asia/Tokyo'    
     ports:
       - "8443:443"
