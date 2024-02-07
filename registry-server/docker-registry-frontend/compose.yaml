@@ -6,7 +6,7 @@ services:
       - ENV_DOCKER_REGISTRY_HOST=${SERVERNAME}
       - ENV_DOCKER_REGISTRY_PORT=5100
     ports:
-      - "8080:80"
+      - "8020:80"
 
 ##
 
