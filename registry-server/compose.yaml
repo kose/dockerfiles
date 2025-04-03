@@ -2,6 +2,7 @@ services:
   registry:
     image: registry:latest
     container_name: registry-server
+    restart: always
     ports:
       - "5100:5000"
     volumes:
