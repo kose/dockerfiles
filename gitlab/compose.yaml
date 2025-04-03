@@ -7,7 +7,7 @@ services:
     hostname: 'repository'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        # external_url 'http://localhost'
+        external_url 'http://localhost/gitlab'
         gitlab_rails['time_zone'] = 'Asia/Tokyo'    
     ports:
       - "8443:443"
